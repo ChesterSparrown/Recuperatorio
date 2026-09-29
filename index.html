@@ -1,14 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="javascript" href="javascript.js">
     <title>Directorio de Contactos</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Examen Recuperatorio1</h1>
-    <!-- Escribe aquí todo tu HTML -->
+</head>
 
+<body>
+
+    <main class="contenedor">
+
+        <h1>Directorio de Contactos</h1>
+
+        <!-- Formulario para agregar contactos -->
+        <section class="formulario">
+
+            <input
+                type="text" id="nombre" placeholder="Nombre"><br>
+
+            <input
+                 type="tel"id="telefono" placeholder="Telefono"><br>
+
+            <button id="btnAgregar">
+                Agregar
+            </button>
+
+        </section>
+
+
+        <!-- Campo para buscar contactos -->
+        <section class="busqueda">
+
+            <input
+                type="text"
+                id="buscar"
+                placeholder="Buscar contacto por nombre..."
+            >
+
+        </section>
+
+
+        <!-- Lista de contactos -->
+        <section class="lista-contactos">
+
+            <ul id="listaContactos">
+                <!-- Los contactos se crearán aquí con JavaScript -->
+            </ul>
+
+            <p id="mensajeVacio">
+                Todavía no agregaste contactos.
+            </p>
+
+        </section>
+
+
+        <!-- Contador -->
+        <section class="contador">
+
+            <p>
+                Contactos: <span id="contadorContactos">0</span>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Más adelante conectaremos aquí nuestro JavaScript -->
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>

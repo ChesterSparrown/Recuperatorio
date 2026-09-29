@@ -44,3 +44,73 @@ input {
     outline: none;
 }
 
+
+/* Efecto cuando hacemos clic en un input */
+input:focus {
+    border-color: #28796d;
+}
+
+
+/* Botón Agregar */
+button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #28796d; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Efecto al pasar el mouse */
+button:hover {
+    background-color: #206357;
+}
+
+
+/* Espacio antes de la búsqueda */
+.busqueda {
+    margin-top: 28px;
+}
+
+
+/* Lista de contactos */
+.lista-contactos {
+    margin-top: 30px;
+}
+
+
+/* Quitamos los estilos predeterminados de la lista */
+#listaContactos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Mensaje cuando no hay contactos */
+#mensajeVacio {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    padding: 25px 0;
+}
+
+
+ /*Contador */
+.contador {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+
+/* Texto del contador */
+.contador p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
